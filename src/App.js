@@ -1,9 +1,12 @@
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import SearchSection from "./components/SearchSection";
 
 function App() {
+  const [peopleData, setPeopleData] = useState(false);
   return (
     <div>
-      Project Initiated
+      <SearchSection peopleData={peopleData} setPeopleData={setPeopleData} />
     </div>
   );
 }
